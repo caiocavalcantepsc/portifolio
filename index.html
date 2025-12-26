@@ -1,159 +1,512 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caio • Web Designer</title>
+    <title>Caio Cavalcante • Desenvolvedor Web Full Stack</title>
+    <meta name="description" content="Desenvolvedor web especializado em sistemas funcionais com Flask, SQLite e tecnologias modernas.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/fav.ico" type="image/x-icon">
 </head>
 
 <body>
+    <div id="particles-js"></div>
+    
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+            <div class="loader-square"></div>
+        </div>
+    </div>
 
-    <header class="header hidden-blurless">
-        <nav>
-            <h1 class="logo">Web Design</h1>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Trabalhos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <div class="logo-box">
+                    <span class="logo-code">&lt;/&gt;</span>
+                    <span class="logo-text">Caio Cavalcante</span>
+                </div>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                
+                <div class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav-btns">
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="https://wa.me/71991914090" target="_blank" class="btn-contact">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Conversar</span>
+                </a>
+            </div>
         </nav>
     </header>
 
-    <section id="home" class="home">
-        <div class="home-text hidden-blurless">
-            <h2>Web Design & Front-End</h2>
-            <p>Interfaces modernas, rápidas e funcionais.</p>
-            <a href="#projects" class="btn">Ver Portfólio</a>
-        </div>
-    </section>
-
-    <section id="about" class="sobre hidden">
-        <h2>Quem sou eu</h2>
-        <div class="inner-sobre">
-            <img src="fto de perfil.png" class="sobre-img" alt="">
-            <p class="texto-sobre">
-                Sou Caio, Web Designer e Desenvolvedor Front-End focado em criar interfaces funcionais,
-                minimalistas e profissionais. Meu objetivo é transformar ideias em sites claros, rápidos e
-                visualmente fortes sempre priorizando experiência do usuário, estética e performance.
-                <br><br>
-                Trabalho desenhando e desenvolvendo páginas modernas com HTML, CSS, JavaScript e boas práticas
-                de UI/UX. Meu foco é criar sites que realmente passem credibilidade e convertam.
-            </p>
-        </div>
-    </section>
-
-    <section class="services hidden">
-        <h2>O que eu faço</h2>
-
-        <div class="services-grid">
-
-            <div class="service-card">
-                <h3>Web Design Profissional</h3><br>
-                <p>
-                    Criação de layouts modernos, limpos e responsivos.
-                    Design pensado para transmitir profissionalismo e manter o usuário engajado.
+    <section class="home section" id="home">
+        <div class="home-container container">
+            <div class="home-content">
+                
+                <h1 class="home-title">
+                    Transformo ideias em
+                    <span class="highlight">sistemas funcionais</span>
+                </h1>
+                
+                <p class="home-description">
+                    Desenvolvo soluções web objetivas que substituem processos manuais,
+                    armazenam dados com segurança e seguem regras de negócio específicas.
+                    <strong>Menos hype, mais código que funciona.</strong>
                 </p>
+                
+                <div class="home-btns">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Projetos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Iniciar Projeto</span>
+                    </a>
+                </div>
+                
+                <div class="home-stats">
+                    <div class="stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Projetos Concluídos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Foco em Funcionalidade</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Disponível para Novos Desafios</span>
+                    </div>
+                </div>
             </div>
+            
+            <div class="home-visual">
+                <div class="floating-card code-card">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span>sistema.py</span>
+                    </div>
+                    <div class="card-content">
+                        <pre><code>from flask import Flask, render_template
+import sqlite3
 
-            <div class="service-card">
-                <h3>Desenvolvimento Front-End</h3><br>
-                <p>
-                    Transformo seu design em código real usando HTML, CSS e JavaScript.
-                    Sites rápidos, bem estruturados e otimizados.
-                </p>
-            </div>
+app = Flask(__name__)
 
-            <div class="service-card">
-                <h3>Experiência do Usuário (UX)</h3><br>
-                <p>
-                    Interfaces intuitivas, fáceis de navegar e focadas no objetivo final:
-                    fazer o usuário agir (comprar, contratar, chamar, clicar).
-                </p>
-            </div>
+# Conexão simples com banco
+def get_db():
+    conn = sqlite3.connect('sistema.db')
+    conn.row_factory = sqlite3.Row
+    return conn
 
-            <div class="service-card">
-                <h3>Lojas e Landing Pages</h3><br>
-                <p>
-                    Páginas de vendas, portfólios, sites institucionais e páginas de captura.
-                    Conteúdo direto, visual forte e foco total em conversão.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="dupla">
-            <div class="service-card">
-                <h3>Identidade Visual Básica</h3><br>
-                <p>
-                    Paleta de cores, tipografias e estilo visual completo para deixar o site coerente e marcante.
-                </p>
-            </div>
-
-            <div class="service-card">
-                <h3>Manutenção e Ajustes</h3><br>
-                <p>
-                    Atualizo, corrijo, otimizo e melhoro qualquer site existente desempenho, layout e SEO.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects" class="projects hidden-blurless">
-        <h2>Meus Projetos</h2>
-
-        <div class="project-grid">
-            <div class="project-card hidden-blurless">
-                <h3>Landing Page Para uma Barbearia</h3>
-                <p>Layout clean, foco no CTA e responsividade total.</p>
-                <a href="https://caiocavalcantepsc.github.io/barbearia/" target="_blank" class="btn small">Ver
-                    Projeto</a>
-            </div>
-
-            <div class="project-card hidden-blurless">
-                <h3>Loja para perfil de afiliados</h3>
-                <p>Interface profissional para empresas pequenas.</p>
-                <a href="https://vinanet.netlify.app/" target="_blank" class="btn small">Ver Projeto</a>
+@app.route('/')
+def index():
+    return "Sistema funcionando!"</code></pre>
+                    </div>
+                </div>
+                
+                <div class="floating-card design-card">
+                    <div class="design-preview">
+                        <div class="browser-bar">
+                            <div class="browser-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="design-content">
+                            <div class="design-element e1"></div>
+                            <div class="design-element e2"></div>
+                            <div class="design-element e3"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="whyme hidden-blurless">
-    <h2>Por que trabalhar comigo?</h2> <br><br>
-
-    <p>
-        Porque eu entrego sites que fazem o que precisam fazer: gerar resultado.
-        Sem enrolação, sem frescura e sem complicar. Tudo é pensado para funcionar bem,
-        carregar rápido e passar a mensagem certa.
-    </p>
-
-    <div class="divwhy">
-        <ul class="why-list">
-            <li>✔ Comunicação direta e rápida</li>
-            <li>✔ Design focado em conversão, não só aparência</li>
-            <li>✔ Carregamento rápido e boa performance</li>
-            <li>✔ Totalmente responsivo em qualquer dispositivo</li>
-            <li>✔ Entrega dentro do prazo combinado</li>
-            <li>✔ Projeto personalizado para o objetivo do cliente</li>
-        </ul>
-    </div>
-</section>
-
-
-    <section id="contact" class="contact hidden-blurless">
-        <h2>Contato</h2> <br>
-        <p>Interessado em trabalhar comigo?</p>
-        <a href="wa.me/71991914090" class="btn">Enviar Email</a>
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Quem sou eu</span>
+                <h2 class="section-title">Sobre <span class="highlight">Mim</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="media/fto-perfil.png" alt="Caio Cavalcante" class="profile-img">
+                        <div class="image-frame"></div>
+                        <div class="image-dots"></div>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python/Flask</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3 class="about-title">Construindo sistemas que <span class="highlight">resolvem problemas reais</span></h3>
+                    
+                    <div class="about-text">
+                        <p>
+                            Meu nome é <strong>Caio Cavalcante</strong>. Sou desenvolvedor web focado em criar sistemas funcionais 
+                            que substituem processos manuais, automatizam tarefas e armazenam dados com segurança.
+                        </p>
+                        
+                        <p>
+                            Minha abordagem é pragmática: entender a necessidade, projetar a solução mais direta e 
+                            implementar com tecnologias adequadas como <strong>Flask, SQLite e JavaScript</strong>.
+                        </p>
+                        
+                        <p>
+                            Acredito em código limpo, documentação clara e sistemas que realmente funcionam no dia a dia.
+                        </p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Desenvolvimento Ágil</h4>
+                                <p>Prototipagem rápida e entrega incremental</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Foco em Segurança</h4>
+                                <p>Validação de dados e proteção contra vulnerabilidades</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-comment-dots"></i>
+                        <span>Vamos conversar sobre seu projeto</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 • Caio-WebDesign</p>
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Minhas Especialidades</span>
+                <h2 class="section-title">Tecnologias & <span class="highlight">Habilidades</span></h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-content">
+                    <h3 class="skills-title">Stack <span class="highlight">Tecnológica</span></h3>
+                    <p class="skills-description">
+                        Foco em tecnologias práticas e eficientes para desenvolvimento web full stack, 
+                        priorizando simplicidade, performance e manutenibilidade.
+                    </p>
+                </div>
+                
+                <div class="skills-visual">
+                    <div class="skill-radar">
+                        <div class="radar-circle">
+                            <div class="radar-line"></div>
+                            <div class="skill-point" style="--angle: 0deg;">
+                                <div class="point"></div>
+                                <span>Flask</span>
+                            </div>
+                            <div class="skill-point" style="--angle: 72deg;">
+                                <div class="point"></div>
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-point" style="--angle: 144deg;">
+                                <div class="point"></div>
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-point" style="--angle: 216deg;">
+                                <div class="point"></div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-point" style="--angle: 288deg;">
+                                <div class="point"></div>
+                                <span>Github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Meu Trabalho</span>
+                <h2 class="section-title">Projetos <span class="highlight">Recentes</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    Sistemas e experimentos que demonstram minha abordagem prática para desenvolvimento web.
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-badge">Landing Page para barbearia</div>
+                        <img src="media/babr souza.png" alt="Barbearia">
+                        <div class="project-overlay">
+                            <a href="https://caiocavalcantepsc.github.io/barbearia/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Barbearia Moderna</h3>
+                        <p class="project-description">
+                            Landing page responsiva com foco em conversão para WhatsApp. 
+                            Design clean e otimizado para dispositivos móveis.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot developing"></span>
+                            <span>Em desenvolvimento</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="https://caiocavalcantepsc.github.io/barbearia/" target="_blank" class="btn btn-small">
+                                <i class="fas fa-eye"></i> Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-badge">E-commerce</div>
+                        <img src="media/vinanet.png" alt="Loja Online">
+                        <div class="project-overlay">
+                            <a href="https://vinanet.netlify.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Loja Online (Frontend)</h3>
+                        <p class="project-description">
+                            Interface completa de e-commerce com carrinho de compras, 
+                            catálogo de produtos e design responsivo.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot online"></span>
+                            <span>Online</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="https://vinanet.netlify.app/" target="_blank" class="btn btn-small">
+                                <i class="fas fa-eye"></i> Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-badge">Site para academia de Jiu-jitsu</div>
+                        <img src="media/corrente.png" alt="Loja Online">
+                        <div class="project-overlay">
+                            <a href="https://vinanet.netlify.app/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Academia</h3>
+                        <p class="project-description">
+                            Site focado na apresentação do produto e contrução de presença online juntamente com profissionalismo.
+                        </p>
+                        <div class="project-tech">
+                            <span>CSS3</span>
+                            <span>HTML5</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot developing"></span>
+                            <span>Em desenvolvimento</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="https://vinanet.netlify.app/" target="_blank" class="btn btn-small">
+                                <i class="fas fa-eye"></i> Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Vamos Trabalhar Juntos</span>
+                <h2 class="section-title">Entre em <span class="highlight">Contato</span></h2>
+                <div class="section-line"></div>
+                <p class="section-description">
+                    Tem um projeto em mente? Vamos conversar sobre como posso ajudar.
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>WhatsApp</h4>
+                            <p>Resposta rápida para conversas diretas</p>
+                            <a href="https://wa.me/71991914090" target="_blank" class="contact-link">
+                                +55 71 99191-4090
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Email</h4>
+                            <p>Para propostas detalhadas e documentação</p>
+                            <a href="mailto:caiop6878@gmail.com" class="contact-link">
+                                caiop6878@gmail.com
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <!-- <div class="contact-form">
+                    <h3 class="form-title">Envie sua <span class="highlight">Ideia</span></h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Descreva seu projeto ou ideia..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Enviar Mensagem</span>
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-box">
+                        <span class="logo-code">&lt;/&gt;</span>
+                        <span class="logo-text">Caio Cavalcante</span>
+                    </div>
+                    <p class="footer-description">
+                        Desenvolvedor web focado em sistemas funcionais e soluções práticas.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-tech">
+                    <h4>Tecnologias</h4>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Caio Cavalcante. Todos os direitos reservados.</p>
+                
+            </div>
+        </div>
     </footer>
 
-</body>
-<script src="script.js"></script>
+    <a href="#home" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
