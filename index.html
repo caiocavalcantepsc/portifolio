@@ -46,10 +46,6 @@
                     <li class="nav-item"><a href="#projects" class="nav-link">Projetos</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
-
-                <!-- <div class="nav-close" id="nav-close">
-                    <i class="fas fa-times"></i>
-                </div> -->
             </div>
 
             <div class="nav-btns">
@@ -110,23 +106,24 @@
                             <span class="dot yellow"></span>
                             <span class="dot green"></span>
                         </div>
-                        <span>sistema.py</span>
+                        <span>script.js</span>
                     </div>
                     <div class="card-content">
-                        <pre><code>from flask import Flask, render_template
-import sqlite3
-
-app = Flask(__name__)
-
-# Conexão simples com banco
-def get_db():
-    conn = sqlite3.connect('sistema.db')
-    conn.row_factory = sqlite3.Row
-    return conn
-
-@app.route('/')
-def index():
-    return "Sistema funcionando!"</code></pre>
+                        <pre><code>// Simulação de inicialização do sistema
+function iniciarSistema() {
+    console.log("Sistema funcionando!");
+}
+// Simulação de acesso a dados
+function obterDados() {
+    return {
+        status: "ativo",
+        mensagem: "Banco conectado (simulado)"
+    };
+}
+// Execução
+iniciarSistema();
+const dados = obterDados();
+console.log(dados);"</code></pre>
                     </div>
                 </div>
 
@@ -167,39 +164,42 @@ def index():
                     </div>
 
                     <div class="tech-stack">
-                        <div class="tech-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python/Flask</span>
-                        </div>
-                        <div class="tech-item">
-                            <i class="fas fa-database"></i>
-                            <span>SQLite</span>
-                        </div>
+
                         <div class="tech-item">
                             <i class="fab fa-html5"></i>
-                            <span>HTML/CSS/JS</span>
+                            <span>HTML</span>
                         </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js"></i>
+                            <span>JS</span>
+                        </div>
+                        
                     </div>
                 </div>
 
                 <div class="about-content">
-                    <h3 class="about-title">Construindo sistemas que <span class="highlight">resolvem problemas
+                    <h3 class="about-title">Construindo sites que <span class="highlight">resolvem problemas
                             reais</span></h3>
 
                     <div class="about-text">
+
                         <p>
-                            Meu nome é <strong>Caio</strong>. Sou desenvolvedor web focado em criar sistemas funcionais
-                            que substituem processos manuais, automatizam tarefas e armazenam dados com segurança.
+                            Meu nome é <strong>Caio</strong>. Sou desenvolvedor web autodidata e focado em criar sites
+                            funcionais.
+                        </p>
+
+                        <p>Gosto de programação justamente pelos desafios. Como autodidata, aprendo constantemente
+                            errando, corrigindo e melhorando e transformando esse processo em soluções objetivas que
+                            economizam tempo, diminuem erros e tornam processos mais eficientes.
                         </p>
 
                         <p>
                             Minha abordagem é pragmática: entender a necessidade, projetar a solução mais direta e
-                            implementar com tecnologias adequadas como <strong>Flask, SQLite e JavaScript</strong>.
-                        </p>
-
-                        <p>
-                            Acredito em código limpo, documentação clara e sistemas que realmente funcionam no dia a
-                            dia.
+                            implementar com tecnologias adequadas.
                         </p>
                     </div>
 
@@ -246,7 +246,7 @@ def index():
                 <div class="skills-content">
                     <h3 class="skills-title">Stack <span class="highlight">Tecnológica</span></h3>
                     <p class="skills-description">
-                        Foco em tecnologias práticas e eficientes para desenvolvimento web full stack,
+                        Foco em tecnologias práticas e eficientes para desenvolvimento,
                         priorizando simplicidade, performance e manutenibilidade.
                     </p>
                 </div>
@@ -443,28 +443,6 @@ def index():
                     </div>
 
                 </div>
-
-                <!-- <div class="contact-form">
-                    <h3 class="form-title">Envie sua <span class="highlight">Ideia</span></h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Seu nome" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Seu email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Assunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Descreva seu projeto ou ideia..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>Enviar Mensagem</span>
-                        </button>
-                    </form>
-                </div> -->
             </div>
         </div>
     </section>
