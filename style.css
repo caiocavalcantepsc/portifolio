@@ -213,7 +213,8 @@ h1, h2, h3, h4 {
 }
 
 .header {
-    position: fixed;
+    position: fixed; 
+    width: 100%;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -223,6 +224,7 @@ h1, h2, h3, h4 {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 
 .nav {
     display: flex;
