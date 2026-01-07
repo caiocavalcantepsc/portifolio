@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caio Cavalcante • Portifólio</title>
+    <title>Caio Cavalcante • Desenvolvedor Web Full Stack</title>
     <meta name="description"
         content="Desenvolvedor web especializado em sistemas funcionais com Flask, SQLite e tecnologias modernas.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -21,7 +21,7 @@
     <div id="particles-js"></div>
 
     <div class="preloader">
-        <div class="loader">
+        <div class="loader hidden-blurless">
             <div class="loader-square"></div>
             <div class="loader-square"></div>
             <div class="loader-square"></div>
@@ -30,7 +30,7 @@
     </div>
 
     <header class="header">
-        <nav class="nav container">
+        <nav class="nav container hidden-blurless">
             <div class="nav-logo">
                 <div class="logo-box">
                     <span class="logo-code">&lt;/&gt;</span>
@@ -61,7 +61,7 @@
     </header>
 
     <section class="home section" id="home">
-        <div class="home-container container">
+        <div class="home-container container  hidden-blurless">
             <div class="home-content">
 
                 <h1 class="home-title">
@@ -150,12 +150,12 @@ console.log(dados);"</code></pre>
     <section class="about section" id="about">
         <div class="container">
             <div class="section-header">
-                <span class="section-subtitle">Quem sou eu</span>
-                <h2 class="section-title">Sobre <span class="highlight">Mim</span></h2>
+                <span class="section-subtitle hidden">Quem sou eu</span>
+                <h2 class="section-title hidden">Sobre <span class="highlight hidden">Mim</span></h2>
                 <div class="section-line"></div>
             </div>
 
-            <div class="about-container">
+            <div class="about-container hidden-blurless">
                 <div class="about-image">
                     <div class="image-wrapper">
                         <img src="media/fto-perfil.png" alt="Caio Cavalcante" class="profile-img">
@@ -181,7 +181,7 @@ console.log(dados);"</code></pre>
                     </div>
                 </div>
 
-                <div class="about-content">
+                <div class="about-content hidden-blurless">
                     <h3 class="about-title">Construindo sites que <span class="highlight">resolvem problemas
                             reais</span></h3>
 
@@ -192,8 +192,8 @@ console.log(dados);"</code></pre>
                             funcionais.
                         </p>
 
-                        <p>Gosto de programação justamente pelos desafios. Como autodidata, aprendo constantemente,
-                            errando, corrigindo e melhorando. Assim transformando esse processo em soluções objetivas que
+                        <p>Gosto de programação justamente pelos desafios. Como autodidata, aprendo constantemente
+                            errando, corrigindo e melhorando e transformando esse processo em soluções objetivas que
                             economizam tempo, diminuem erros e tornam processos mais eficientes.
                         </p>
 
@@ -203,7 +203,7 @@ console.log(dados);"</code></pre>
                         </p>
                     </div>
 
-                    <div class="about-features">
+                    <div class="about-features hidden-blurless">
                         <div class="feature">
                             <div class="feature-icon">
                                 <i class="fas fa-bolt"></i>
@@ -213,9 +213,19 @@ console.log(dados);"</code></pre>
                                 <p>Prototipagem rápida e entrega incremental</p>
                             </div>
                         </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Foco em Segurança</h4>
+                                <p>Validação de dados e proteção contra vulnerabilidades</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <a href="#contact" class="btn btn-outline">
+                    <a href="#contact" class="btn btn-outline hidden-blurless">
                         <i class="fas fa-comment-dots"></i>
                         <span>Vamos conversar sobre seu projeto</span>
                     </a>
@@ -225,14 +235,14 @@ console.log(dados);"</code></pre>
     </section>
 
     <section class="skills section" id="skills">
-        <div class="container">
+        <div class="container hidden-blurless">
             <div class="section-header">
                 <span class="section-subtitle">Minhas Especialidades</span>
                 <h2 class="section-title">Tecnologias & <span class="highlight">Habilidades</span></h2>
                 <div class="section-line"></div>
             </div>
 
-            <div class="skills-container">
+            <div class="skills-container hidden-blurless">
                 <div class="skills-content">
                     <h3 class="skills-title">Stack <span class="highlight">Tecnológica</span></h3>
                     <p class="skills-description">
@@ -241,7 +251,7 @@ console.log(dados);"</code></pre>
                     </p>
                 </div>
 
-                <div class="skills-visual">
+                <div class="skills-visual hidden-blurless">
                     <div class="skill-radar">
                         <div class="radar-circle">
                             <div class="radar-line"></div>
@@ -273,7 +283,7 @@ console.log(dados);"</code></pre>
     </section>
 
     <section class="projects section" id="projects">
-        <div class="container">
+        <div class="container hidden-blurless">
             <div class="section-header">
                 <span class="section-subtitle">Meu Trabalho</span>
                 <h2 class="section-title">Projetos <span class="highlight">Recentes</span></h2>
@@ -284,10 +294,10 @@ console.log(dados);"</code></pre>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card" data-category="frontend">
+                <div class="project-card  hidden" data-category="frontend">
                     <div class="project-image">
                         <div class="project-badge">Landing Page para barbearia</div>
-                        <img src="media/babr souza.png" alt="Barbearia">
+                        <img src="media/barb souza4.png" alt="Barbearia">
                         <div class="project-overlay">
                             <a href="https://caiocavalcantepsc.github.io/barbearia/" target="_blank"
                                 class="project-link">
@@ -307,8 +317,8 @@ console.log(dados);"</code></pre>
                             <span>JavaScript</span>
                         </div>
                         <div class="project-status">
-                            <span class="status-dot developing"></span>
-                            <span>Em desenvolvimento</span>
+                            <span class="status-dot online"></span>
+                            <span>Finalizado</span>
                         </div>
                         <div class="project-btns">
                             <a href="https://caiocavalcantepsc.github.io/barbearia/" target="_blank"
@@ -319,7 +329,7 @@ console.log(dados);"</code></pre>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="frontend">
+                <div class="project-card hidden" data-category="frontend">
                     <div class="project-image">
                         <div class="project-badge">E-commerce</div>
                         <img src="media/vinanet.png" alt="Loja Online">
@@ -343,7 +353,7 @@ console.log(dados);"</code></pre>
                         </div>
                         <div class="project-status">
                             <span class="status-dot online"></span>
-                            <span>Online</span>
+                            <span>Finalizado</span>
                         </div>
                         <div class="project-btns">
                             <a href="https://vinanet.netlify.app/" target="_blank" class="btn btn-small">
@@ -353,7 +363,7 @@ console.log(dados);"</code></pre>
                     </div>
                 </div>
 
-                <div class="project-card" data-category="fullstack">
+                <div class="project-card hidden" data-category="fullstack">
                     <div class="project-image">
                         <div class="project-badge">Site para academia de Jiu-jitsu</div>
                         <img src="media/corrente.png" alt="Loja Online">
@@ -387,13 +397,48 @@ console.log(dados);"</code></pre>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card hidden" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-badge">Site para Fotógrafo</div>
+                        <img src="media/fotogrado bg.png" alt="Loja Online">
+                        <div class="project-overlay">
+                            <a href="https://caiocavalcantepsc.github.io/fotografia/" target="_blank"
+                                class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Fotografia</h3>
+                        <p class="project-description">
+                            Site focado na apresentação do produto e contrução de presença online.
+                        </p>
+                        <div class="project-tech">
+                            <span>CSS3</span>
+                            <span>HTML5</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-dot online"></span>
+                            <span>Finalizado</span>
+                        </div>
+                        <div class="project-btns">
+                            <a href="https://caiocavalcantepsc.github.io/corrente-updated/" target="_blank"
+                                class="btn btn-small">
+                                <i class="fas fa-eye"></i> Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
     <section class="contact section" id="contact">
-        <div class="container">
-            <div class="section-header">
+        <div class="container hidden-blurless">
+            <div class="section-header hidden">
                 <span class="section-subtitle">Vamos Trabalhar Juntos</span>
                 <h2 class="section-title">Entre em <span class="highlight">Contato</span></h2>
                 <div class="section-line"></div>
@@ -404,7 +449,7 @@ console.log(dados);"</code></pre>
 
             <div class="contact-container">
                 <div class="contact-info">
-                    <div class="contact-card">
+                    <div class="contact-card hidden">
                         <div class="contact-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
@@ -418,7 +463,7 @@ console.log(dados);"</code></pre>
                         </div>
                     </div>
 
-                    <div class="contact-card">
+                    <div class="contact-card hidden">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
@@ -440,7 +485,7 @@ console.log(dados);"</code></pre>
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-logo hidden">
                     <div class="logo-box">
                         <span class="logo-code">&lt;/&gt;</span>
                         <span class="logo-text">Caio Cavalcante</span>
@@ -450,7 +495,7 @@ console.log(dados);"</code></pre>
                     </p>
                 </div>
 
-                <div class="footer-links">
+                <div class="footer-links hidden">
                     <h4>Links Rápidos</h4>
                     <ul>
                         <li><a href="#home">Início</a></li>
@@ -460,9 +505,9 @@ console.log(dados);"</code></pre>
                     </ul>
                 </div>
 
-                <div class="footer-tech">
+                <div class="footer-tech hidden">
                     <h4>Tecnologias</h4>
-                    <div class="tech-tags">
+                    <div class="tech-tags hidden">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
@@ -470,7 +515,7 @@ console.log(dados);"</code></pre>
                 </div>
             </div>
 
-            <div class="footer-bottom">
+            <div class="footer-bottom hidden-blurless">
                 <p>&copy; 2025 Caio Cavalcante. Todos os direitos reservados.</p>
 
             </div>
@@ -486,5 +531,3 @@ console.log(dados);"</code></pre>
 </body>
 
 </html>
-
-
