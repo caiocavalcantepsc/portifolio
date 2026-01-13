@@ -916,7 +916,7 @@ h1, h2, h3, h4 {
 
 .contact-info {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 20px;
 }
 
@@ -1458,6 +1458,16 @@ h1, h2, h3, h4 {
     .tech-stack{
         display: flex;
         
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
     }
     
     @media screen and (max-height: 500px) and (orientation: landscape) {
